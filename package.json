@@ -1,0 +1,20 @@
+{
+  "name": "cordova-plugin-aps-fix",
+  "version": "1.0.0",
+  "description": "For\u00e7a a inclus\u00e3o do aps-environment nos entitlements do iOS",
+  "cordova": {
+    "id": "cordova-plugin-aps-fix",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "ios",
+    "push",
+    "aps",
+    "entitlement"
+  ],
+  "author": "Jonas Cerantola",
+  "license": "MIT"
+}

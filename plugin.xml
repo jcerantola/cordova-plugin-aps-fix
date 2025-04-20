@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-aps-fix"
+        version="1.0.0">
+  <name>APS Entitlement Fix</name>
+  <description>Força a inclusão de aps-environment=production no build iOS</description>
+  <license>MIT</license>
+  <keywords>cordova, ios, push, aps, entitlement</keywords>
+
+  <platform name="ios">
+    <edit-config target="aps-environment" file="Entitlements-Release.plist" mode="merge">
+      <string>production</string>
+    </edit-config>
+    <edit-config target="aps-environment" file="Entitlements-Debug.plist" mode="merge">
+      <string>development</string>
+    </edit-config>
+  </platform>
+</plugin>
